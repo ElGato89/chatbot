@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <!-- Category for greeting -->
+    <category>
+    <pattern>Hi</pattern>
+    <template>
+        <random>
+            <li>Hello! Welcome to City Mall Bookstore. How can I help you today?</li>
+            <li>Hi there! Welcome to our bookstore. What can I assist you with?</li>
+            <li>Hello! Ready to find your next great read? How can I help?</li>
+        </random>
+        
+        <button>
+            <text>📚About City Mall Bookstore</text>
+            <postback>Bookstore</postback>
+        </button>
+        <button>
+            <text>🤔 Ask Questions</text>
+            <postback>More Questions</postback>
+        </button>
+        
+    </template>
+  </category>
+  
+    <category>
+    <pattern>Hello</pattern>
+    <template>
+        <random>
+            <li>Hello! Welcome to City Mall Bookstore. How can I help you today?</li>
+            <li>Hi there! Welcome to our bookstore. What can I assist you with?</li>
+            <li>Hello! Ready to find your next great read? How can I help?</li>
+        </random>
+        <button>
+            <text>📚About City Mall Bookstore</text>
+            <postback>Bookstore</postback>
+        </button>
+        <button>
+            <text>🤔 Ask Questions</text>
+            <postback>More Questions</postback>
+        </button>
+    </template>
+  </category>
+  
+  <category>
+    <pattern>Hey</pattern>
+    <template>
+        <random>
+            <li>Hello! Welcome to City Mall Bookstore. How can I help you today?</li>
+            <li>Hi there! Welcome to our bookstore. What can I assist you with?</li>
+            <li>Hello! Ready to find your next great read? How can I help?</li>
+        </random>
+        <button>
+            <text>📚About City Mall Bookstore</text>
+            <postback>Bookstore</postback>
+        </button>
+        <button>
+            <text>🤔 Ask Questions</text>
+            <postback>More Questions</postback>
+        </button>
+    </template>
+  </category>
+  
+  
+  <category>
+      <pattern>Main</pattern>
+      <template>
+        <random>
+            <li>Welcome to City Mall Bookstore. How can I help you today?</li>
+            <li>Welcome to our bookstore. What can I assist you with?</li>
+            <li>Ready to find your next great read? How can I help?</li>
+        </random>
+        <button>
+            <text>📚About City Mall Bookstore</text>
+            <postback>Bookstore</postback>
+        </button>
+        <button>
+            <text>🤔 Ask Questions</text>
+            <postback>More Questions</postback>
+        </button>  
+      </template>
+  </category>
+  
+  <category>
+      <pattern>More Questions</pattern>
+      <template>
+          What topics would you like to know about?
+                  <button>
+                      <text>About our Bookstore</text>
+                      <postback>Bookstore</postback>
+                  </button>
+                  
+                  <button>
+                      <text>Book Availability</text>
+                      <postback>Availability</postback>
+                  </button>
+                  
+                  <button>
+                      <text>More Questions</text>
+                      <postback>que</postback>
+                  </button>
+      </template>
+  </category>
+  
+<category>
+    <pattern>que</pattern>
+    <template>
+        What topics would you like to know about?
+        <button>
+            <text>Book Recommendations</text>
+            <postback>Recommendations</postback>
+        </button>
+        
+        <button>
+            <text>Promotions and Events</text>
+            <postback>PromoEvent</postback>
+        </button>
+        
+        <button>
+              <text>More Questions</text>
+              <postback>otherquestion</postback>
+          </button>
+      </template>
+  </category>
+
+    <category>
+      <pattern>otherquestion</pattern>
+      <template>
+        <button>
+              <text>Purchase and Services</text>
+              <postback>PurchaseServices</postback>
+        </button>
+          
+        <button>
+              <text>Back to Menu</text>
+              <postback>Main</postback>
+        </button>
+      </template>
+  </category>
+
+  
+  
+  <!-- Category for bookstore -->
+<category>
+    <pattern>BookStore</pattern>
+    <template>
+        What would you like to know more about our bookstore?
+        <button>
+            <text>About our store</text>
+            <postback>Store Info</postback>
+        </button>
+        
+        <button>
+            <text>What are your opening hours?</text>
+            <postback>Opening Hours</postback>
+        </button>
+        <button>
+            <text>Where is your store located at?</text>
+            <postback>Store Location</postback>
+        </button>
+        <button>
+            <text>Do you have parking nearby?</text>
+            <postback>Parking nearby</postback>
+        </button>
+    </template>
+</category>
+
+<category>
+    <pattern>Store Info</pattern>
+    <template>
+        📚 Welcome to City Mall Bookstore, your one-stop destination for stories, knowledge, and inspiration!
+        We opened our doors in 2015 with a simple mission — to bring people closer to the joy of reading.
+        
+        ✨ What makes us special:
+        - A wide collection of genres including fiction, non-fiction, manga, and academic books.
+        - A cozy reading corner for book lovers to relax.
+        - Friendly staff who are always ready to help you find your next favorite book.
+        
+        Whether you're looking for the latest bestseller, a thoughtful gift, or just a quiet place to explore new worlds, we're here for you.📚 Welcome to City Mall Bookstore, your one-stop destination for stories, knowledge, and inspiration!
+        We opened our doors in 2015 with a simple mission — to bring people closer to the joy of reading.
+        
+        ✨ What makes us special:
+        - A wide collection of genres including fiction, non-fiction, manga, and academic books.
+        - A cozy reading corner for book lovers to relax.
+        - Friendly staff who are always ready to help you find your next favorite book.
+        
+        Whether you're looking for the latest bestseller, a thoughtful gift, or just a quiet place to explore new worlds, we're here for you.
+        <button>
+            <text>Thank you</text>
+            <postback>Main</postback>
+        </button>
+        <button>
+            <text>I have another question</text>
+            <postback>More Questions</postback>
+        </button>
+    </template>
+</category>
+
+<category>
+    <pattern>Opening Hours</pattern>
+    <template>
+        We are open from 10:00 AM to 10:00 PM, Monday to Saturday
+        <button>
+            <text>Thank you</text>
+            <postback>Main</postback>
+        </button>
+        <button>
+            <text>I have another question</text>
+            <postback>More Questions</postback>
+        </button>
+    </template>
+</category>
+
+<category>
+    <pattern>Store Location</pattern>
+    <template>
+        We are located at Lot 15, 1st Floor, City Mall, Pulau Pinang.
+        <button>
+            <text>Thank you</text>
+            <postback>Main</postback>
+        </button>
+        <button>
+            <text>I have another question</text>
+            <postback>More Questions</postback>
+        </button>
+    </template>
+</category>
+
+<category>
+    <pattern>Parking Nearby</pattern>
+    <template>
+        Yes, parking is available at the mall's basement level
+        <button>
+            <text>Thank you</text>
+            <postback>Main</postback>
+        </button>
+        <button>
+            <text>I have another question</text>
+            <postback>More Questions</postback>
+        </button>
+    </template>
+</category>
+
+<!-- Category for book recommendations -->
+<category>
+    <pattern>Recommendations</pattern>
+    <template>
+        Would you like us to give some recommendation? Type your prefered genres and we will list down in Top 10 based on highest rating for you. (Example: Can you recommend a [genre] book?)
+    </template>
+    <button>
+        <text>No thanks</text>
+        <postback>Main</postback>
+    </button>
+</category>
+
+<category>
+    <pattern>CAN YOU RECOMMEND A * BOOK</pattern>
+    <template>
+            <set name="genre">
+                <star/>
+            </set>
+        
+        <condition name="genre">
+            <li value="manga">Here is the top book list from Manga (sorted by rating): One Piece (Rating: 10), Demon Slayer (Rating: 9), Attack on Titan (Rating: 8), Spy x Family (Rating: 7), Naruto (Rating: 6).</li>
+            <li value="fantasy">Here is the top book list from Fantasy (sorted by rating): Harry Potter (Rating: 9), Percy Jackson (Rating: 9), The Hobbit (Rating: 4).</li>
+            <li value="dystopian">Here is the top book list from Dystopian (sorted by rating): The Hunger Games (Rating: 10), 1984 (Rating: 8), Divergent (Rating: 5).</li>
+            <li value="classic">Here is the top book list from Classic (sorted by rating): 1984 (Rating: 8), Pride and Prejudice (Rating: 5), To Kill a Mockingbird (Rating: 3), The Great Gatsby (Rating: 1).</li>
+            <li value="non fiction">Here is the top book list from Non-Fiction (sorted by rating): Atomic Habits (Rating: 8), Sapiens (Rating: 6), Rich Dad Poor Dad (Rating: 3), Becoming (Rating: 2), Educated (Rating: 1).</li>
+            <li value="fiction">Here is the top book list from Fiction (sorted by rating): The Alchemist (Rating: 5).</li>
+            <li>Here are some popular books in the <star/> genre. Visit our store to see our full collection!</li>
+        </condition>
+        
+         Do u need any recommendations on other genre?
+        <button>
+        <text>No thanks</text>
+        <postback>Main</postback>
+        </button>
+    </template>
+</category>
+
+<!-- Category for purchase and services-->
+  
+  <category>
+      <pattern>PurchaseServices</pattern>
+      <template>
+          What would you like to know about Purchase and Services?
+          <button>
+              <text>Can I order online?</text>
+              <postback>orderonline</postback>
+          </button>
+          <button>
+                <text>Do you offer gift wrapping?</text>
+                <postback>giftwrap</postback>
+            </button>
+            <button>
+                <text>Can I reserve/borrow a book?</text>
+                <postback>reserveborrow</postback>
+            </button>
+      </template>
+  </category>
+
+<category>
+    <pattern>orderonline</pattern>
+    <template>
+    Yes, you can order from our website and choose delivery or in-store pickup
+    <button>
+        <text>I have other questions</text>
+        <postback>More Questions</postback>
+    </button>
+    <button>
+        <text>Thanks</text>
+        <postback>Main</postback>
+    </button>
+    </template>
+</category>
+
+<category>
+    <pattern>giftwrap</pattern>
+    <template>Yes, complimentary gift wrapping is available for all purchases
+        <button>
+        <text>I have other questions</text>
+        <postback>More Questions</postback>
+    </button>
+    <button>
+        <text>Thanks</text>
+        <postback>Main</postback>
+    </button>
+    </template>
+</category>
+
+<category>
+    <pattern>reserveborrow</pattern>
+    <template>Yes, can you reserve or borrow a book by visiting reception desk in physical store or calling our contact number: +603-1234 5678 or whatsapp: +6012-345 6789
+        <button>
+        <text>I have other questions</text>
+        <postback>More Questions</postback>
+    </button>
+    <button>
+        <text>Thanks</text>
+        <postback>Main</postback>
+    </button>
+    </template>
+</category>
+
+
+<!-- Category for book availability-->
+
+<category>
+    <pattern>Availability</pattern>
+    <template>What would you like to know about book availability?
+
+    (Example : Do you sell [genre]? )
+
+    </template>
+</category>
+
+<category>
+    <pattern>Do you sell * </pattern>
+    <template>
+            <set name="genre">
+                <star/>
+            </set>
+        
+        <condition name="genre">
+            <li value="manga">Yes! Here is the book list from Manga: One Piece, Demon Slayer, Attack on Titan, Spy x Family, Naruto.</li>
+            <li value="fantasy">Ya! Here is the book list from Fantasy: Harry Potter, Percy Jackson, The Hobbit.</li>
+            <li value="dystopian">Ofc! Here is the book list from Dystopian: The Hunger Games, 1984, Divergent.</li>
+            <li value="classic">Yes! Here is the book list from Classic: 1984, Pride and Prejudice, To Kill a Mockingbird, The Great Gatsby.</li>
+            <li value="non fiction">Ya! Here is the book list from Non-Fiction: Atomic Habits, Sapiens, Rich Dad Poor Dad, Becoming, Educated.</li>
+            <li value="fiction">Ofc! Here is the book list from Fiction: The Alchemist.</li>
+            <li>Here might have some popular books in the <star/> genre. Visit our store to see our full collection!</li>
+        </condition>
+        
+         Do u want to know book availability on other genre?
+        <button>
+        <text>No thanks</text>
+        <postback>Main</postback>
+        </button>
+    </template>
+</category>
+
+
+
+
+
+
+
+</aiml>
